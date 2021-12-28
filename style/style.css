@@ -23,6 +23,28 @@ img {
   background-size: cover;
 }
 
+.start {
+  border: none;
+  background: #000;
+  color: #c4c4c4;
+  font-weight: 500;
+  padding: .75rem;
+  border-radius: .5rem;
+}
+
+.start span {
+  color: #fff;
+  font-weight: 600;
+}
+
+.start:hover {
+  border: 1px solid #000;
+  background: transparent;
+  color: #000;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -39,7 +61,7 @@ header .hamburger {
   right: 0;
   position: fixed;
   padding: 1.25rem;
-  z-index: 1;
+  z-index: 2;
 }
 
 header nav .nav-ul {
@@ -56,20 +78,6 @@ header nav .nav-ul {
 header nav .nav-ul li {
   list-style-type: none;
   color: #252525;
-}
-
-header nav .nav-ul li a.start {
-  margin-top: 1rem;
-  background: #000;
-  color: #c4c4c4;
-  font-weight: 500;
-  padding: .75rem;
-  border-radius: .5rem;
-}
-
-header nav .nav-ul li a.start span {
-  color: #fff;
-  font-weight: 600;
 }
 
 header nav .nav-ul.show {
@@ -91,6 +99,7 @@ header nav .nav-ul.show {
   position: fixed;
   -webkit-backdrop-filter: blur(0.5rem);
           backdrop-filter: blur(0.5rem);
+  z-index: 1;
 }
 
 @media screen and (min-width: 768px) {
@@ -120,6 +129,112 @@ header nav .nav-ul.show {
 @media screen and (min-width: 1024px) {
   header {
     padding: 2.25rem;
+  }
+}
+
+main {
+  padding: 1.25rem 1.25rem 0 1.25rem;
+  position: relative;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .hero_img {
+  height: 10rem;
+}
+
+main .text {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .5rem;
+}
+
+main .text h1 {
+  font-size: 2.5rem;
+  max-width: 75%;
+}
+
+main .text p {
+  color: #333333;
+  font-size: .9rem;
+  max-width: 19rem;
+}
+
+main .text button {
+  width: 90%;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    padding: 1.75rem 1.75rem 0 1.75rem;
+    gap: 6rem;
+  }
+  main .text {
+    gap: 1rem;
+    width: 100%;
+  }
+  main .text h1 {
+    font-size: 2.75rem;
+    max-width: 25rem;
+  }
+  main .text p {
+    max-width: 30.75rem;
+  }
+  main .text button {
+    width: 12.5rem;
+  }
+  main .hero_img {
+    width: 100%;
+    height: 20rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    padding: 2.25rem 2.25rem 0 2.25rem;
+    gap: 6rem;
+  }
+  main .text {
+    gap: 1rem;
+    width: 100%;
+  }
+  main .text h1 {
+    font-size: 3.2rem;
+    max-width: 41.5rem;
+  }
+  main .text p {
+    max-width: 42.5rem;
+    font-size: 1.1rem;
+  }
+  main .text button {
+    width: 12.5rem;
+  }
+  main .hero_img {
+    width: 75%;
+    height: 20rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

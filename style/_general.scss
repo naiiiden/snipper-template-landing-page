@@ -22,3 +22,24 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.start {
+    border: none;
+    background: #000;
+    color: #c4c4c4;
+    font-weight: 500;
+    padding: .75rem;
+    border-radius: .5rem;
+
+     span {
+         color: #fff;
+         font-weight: 600;
+     }
+
+     &:hover {
+        border: 1px solid #000;
+        background: transparent;
+        color: #000;
+        transition: 0.3s ease;
+     }
+ }
