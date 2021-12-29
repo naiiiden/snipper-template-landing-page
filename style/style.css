@@ -333,13 +333,19 @@ section .text button {
     gap: 0;
   }
   section .text {
-    width: 50%;
+    width: 45%;
   }
 }
 
 @media screen and (min-width: 1600px) {
   section {
-    gap: 4rem;
+    gap: 7.5rem;
+  }
+  section .customizable {
+    max-width: 37.5rem;
+  }
+  section .text {
+    width: 40%;
   }
   section .text h2 {
     font-size: 2.4rem;

@@ -82,15 +82,22 @@ section {
         gap: 0;
 
         .text {
-            width: 50%;
+            width: 45%;
         }
     }
 }
 
 @media screen and (min-width: 1600px) {
     section {
-        gap: 4rem;
+        gap: 7.5rem;
+        // gap: 15rem;
+        
+        .customizable {
+            max-width: 37.5rem;
+        }
+
         .text {
+            width: 40%;
             h2 {
                 font-size: 2.4rem;
             }
