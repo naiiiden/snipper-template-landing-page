@@ -348,4 +348,47 @@ section .text button {
     font-size: 1.1rem;
   }
 }
+
+footer {
+  padding: 1.25rem;
+}
+
+footer nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: .95rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer nav ul li {
+  color: #252525;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    padding: 1.75rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer nav ul {
+    gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer {
+    padding: 2.25rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */

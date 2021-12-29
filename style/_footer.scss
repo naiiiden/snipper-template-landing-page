@@ -1,0 +1,35 @@
+footer {
+    padding: 1.25rem;
+
+    nav {
+        ul {
+            list-style-type: none;
+            display: flex;
+            font-size: .95rem;
+            justify-content: space-between;
+            li {
+                color: rgb(37, 37, 37);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    footer {
+        padding: 1.75rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        nav {
+            ul {
+                gap: 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    footer {
+        padding: 2.25rem;
+    }
+}
