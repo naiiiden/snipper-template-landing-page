@@ -1,4 +1,5 @@
-header {
+@media screen and (max-width: 767px) {
+    header {
     display: flex;
     align-items: center;
     padding: 1.25rem;
@@ -18,7 +19,19 @@ header {
             justify-content: center;
             align-items: center;
             display: none;
-            
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            height: 0;
+            gap: 1rem;
+            top: 0;
+            left: 0;
+            right: 0;
+            position: fixed;
+            backdrop-filter: blur(.5rem);
+            z-index: 1;
+            opacity: 0;
+
             li {
                 list-style-type: none;
                 color: rgb(37, 37, 37);
@@ -26,25 +39,18 @@ header {
             }
 
             &.show {
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-end;
-                height: 50vh;
-                gap: 1rem;
-                top: 0;
-                left: 0;
-                right: 0;
-                position: fixed;
-                backdrop-filter: blur(.5rem);
-                z-index: 1;
+                height: 35vh;
+                opacity: 1;
+                transition: 0.3s ease;
             }
         }
     }
+    }
 }
-
 @media screen and (min-width: 768px) {
     header {
         padding: 1.75rem;
+        display: flex;
         justify-content: space-between;
 
         .hamburger {
@@ -53,6 +59,8 @@ header {
 
         nav {
             .nav-ul {
+                color: rgb(37, 37, 37);
+                list-style-type: none;
                 display: flex;
                 align-items: center;
                 justify-content: flex-end;
