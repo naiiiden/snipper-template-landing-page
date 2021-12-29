@@ -78,6 +78,7 @@ header nav .nav-ul {
 header nav .nav-ul li {
   list-style-type: none;
   color: #252525;
+  margin-bottom: 1rem;
 }
 
 header nav .nav-ul.show {
@@ -88,9 +89,9 @@ header nav .nav-ul.show {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   height: 50vh;
   gap: 1rem;
   top: 0;
@@ -233,8 +234,118 @@ main .text button {
     width: 12.5rem;
   }
   main .hero_img {
-    width: 75%;
+    width: 80%;
     height: 20rem;
+  }
+}
+
+section {
+  padding: 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+section .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: .5rem;
+}
+
+section .text h2 {
+  font-size: 1.75rem;
+}
+
+section .text p {
+  color: #333333;
+  font-size: .825rem;
+}
+
+section .text button {
+  width: 12.5rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    padding: 1.75rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 3rem;
+  }
+  section .customizable {
+    width: 65%;
+  }
+  section .text h2 {
+    font-size: 2.3rem;
+  }
+  section .text p {
+    font-size: 1.05rem;
+  }
+  section .text button {
+    font-size: 1rem;
+  }
+  section .text button:hover span {
+    color: #000;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  section {
+    padding: 2.25rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  section .customizable {
+    max-width: 30rem;
+  }
+  section .text {
+    gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  section {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 0;
+  }
+  section .text {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  section {
+    gap: 4rem;
+  }
+  section .text h2 {
+    font-size: 2.4rem;
+  }
+  section .text p {
+    font-size: 1.1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

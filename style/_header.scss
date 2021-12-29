@@ -22,12 +22,13 @@ header {
             li {
                 list-style-type: none;
                 color: rgb(37, 37, 37);
+                margin-bottom: 1rem;
             }
 
             &.show {
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
+                justify-content: flex-end;
                 height: 50vh;
                 gap: 1rem;
                 top: 0;
