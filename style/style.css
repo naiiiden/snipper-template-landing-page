@@ -42,6 +42,10 @@ img {
   transition: 0.3s ease;
 }
 
+.start:focus {
+  outline-offset: 0.25rem;
+}
+
 @media screen and (max-width: 767px) {
   header {
     display: flex;
