@@ -36,7 +36,14 @@
                 list-style-type: none;
                 color: rgb(37, 37, 37);
                 margin-bottom: 1rem;
+                
+                button {
+                    border: none;
+                    background: none;
+                    display: flex;
+                }
             }
+
 
             &.show {
                 height: 35vh;
@@ -65,6 +72,12 @@
                 align-items: center;
                 justify-content: flex-end;
                 gap: 1.5rem;
+
+                button {
+                    border: none;
+                    background: none;
+                    display: flex;
+                }
             }
         }
     }

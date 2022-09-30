@@ -2,8 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -28,31 +27,24 @@ img {
   background: #000;
   color: #c4c4c4;
   font-weight: 500;
-  padding: .75rem;
-  border-radius: .5rem;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
 }
-
 .start span {
   color: #fff;
   font-weight: 600;
 }
-
 .start:hover {
   border: 1px solid #000;
   background: transparent;
   color: #000;
-  -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
 
 @media screen and (max-width: 767px) {
   header {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     padding: 1.25rem;
   }
   header .hamburger {
@@ -65,23 +57,12 @@ img {
   }
   header nav .nav-ul {
     width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     display: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
     height: 0;
     gap: 1rem;
     top: 0;
@@ -95,102 +76,77 @@ img {
   }
   header nav .nav-ul li {
     list-style-type: none;
-    color: #252525;
+    color: rgb(37, 37, 37);
     margin-bottom: 1rem;
+  }
+  header nav .nav-ul li button {
+    border: none;
+    background: none;
+    display: flex;
   }
   header nav .nav-ul.show {
     height: 35vh;
     opacity: 1;
-    -webkit-transition: 0.3s ease;
     transition: 0.3s ease;
   }
 }
-
 @media screen and (min-width: 768px) {
   header {
     padding: 1.75rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   header .hamburger {
     display: none;
   }
   header nav .nav-ul {
-    color: #252525;
+    color: rgb(37, 37, 37);
     list-style-type: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    align-items: center;
+    justify-content: flex-end;
     gap: 1.5rem;
   }
+  header nav .nav-ul button {
+    border: none;
+    background: none;
+    display: flex;
+  }
 }
-
 @media screen and (min-width: 1024px) {
   header {
     padding: 2.25rem;
   }
 }
-
 main {
   padding: 1.25rem 1.25rem 0 1.25rem;
   position: relative;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 3rem;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
-
 main .hero_img {
   height: 10rem;
 }
-
 main .text {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: .5rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
 }
-
 main .text h1 {
   font-size: 2.5rem;
   max-width: 75%;
 }
-
 main .text p {
   color: #333333;
-  font-size: .9rem;
+  font-size: 0.9rem;
   max-width: 19rem;
 }
-
 main .text button {
   width: 90%;
   font-size: 1rem;
@@ -220,7 +176,6 @@ main .text button {
     height: 20rem;
   }
 }
-
 @media screen and (min-width: 1024px) {
   main {
     padding: 2.25rem 2.25rem 0 2.25rem;
@@ -246,58 +201,35 @@ main .text button {
     height: 20rem;
   }
 }
-
 section {
   padding: 1.25rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 2rem;
 }
-
 section .text {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: .5rem;
+  flex-direction: column;
+  gap: 0.5rem;
 }
-
 section .text h2 {
   font-size: 1.75rem;
 }
-
 section .text p {
   color: #333333;
-  font-size: .825rem;
+  font-size: 0.825rem;
 }
-
 section .text button {
   width: 12.5rem;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+  align-self: flex-start;
 }
 
 @media screen and (min-width: 768px) {
   section {
     padding: 1.75rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
     gap: 3rem;
   }
   section .customizable {
@@ -316,14 +248,10 @@ section .text button {
     color: #000;
   }
 }
-
 @media screen and (min-width: 1024px) {
   section {
     padding: 2.25rem;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    flex-direction: row-reverse;
   }
   section .customizable {
     max-width: 30rem;
@@ -332,19 +260,15 @@ section .text button {
     gap: 1rem;
   }
 }
-
 @media screen and (min-width: 1440px) {
   section {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
     gap: 0;
   }
   section .text {
     width: 45%;
   }
 }
-
 @media screen and (min-width: 1600px) {
   section {
     gap: 7.5rem;
@@ -362,47 +286,32 @@ section .text button {
     font-size: 1.1rem;
   }
 }
-
 footer {
   padding: 1.25rem;
 }
-
 footer nav ul {
   list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  font-size: .95rem;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  font-size: 0.95rem;
+  justify-content: space-between;
 }
-
 footer nav ul li {
-  color: #252525;
+  color: rgb(37, 37, 37);
 }
 
 @media screen and (min-width: 768px) {
   footer {
     padding: 1.75rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    align-items: center;
+    justify-content: space-between;
   }
   footer nav ul {
     gap: 1rem;
   }
 }
-
 @media screen and (min-width: 1024px) {
   footer {
     padding: 2.25rem;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
