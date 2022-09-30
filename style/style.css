@@ -310,7 +310,8 @@ footer nav ul {
   font-size: 0.95rem;
   justify-content: space-between;
 }
-footer nav ul li {
+footer nav ul li a {
+  text-decoration: none;
   color: rgb(37, 37, 37);
 }
 
