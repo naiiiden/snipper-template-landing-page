@@ -1,4 +1,4 @@
-section {
+aside {
     padding: 1.25rem;
     display: flex;
     flex-direction: column;
@@ -28,7 +28,7 @@ section {
 }
 
 @media screen and (min-width: 768px) {
-    section {
+    aside {
         padding: 1.75rem;
         display: flex;
         flex-direction: column;
@@ -62,7 +62,7 @@ section {
 }
 
 @media screen and (min-width: 1024px) {
-    section {
+    aside {
         padding: 2.25rem;
         flex-direction: row-reverse;
 
@@ -77,7 +77,7 @@ section {
 }
 
 @media screen and (min-width: 1440px) {
-    section {
+    aside {
         justify-content: center;
         gap: 0;
 
@@ -88,7 +88,7 @@ section {
 }
 
 @media screen and (min-width: 1600px) {
-    section {
+    aside {
         gap: 7.5rem;
         // gap: 15rem;
         

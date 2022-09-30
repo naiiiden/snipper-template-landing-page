@@ -216,88 +216,88 @@ main .text button {
     height: 20rem;
   }
 }
-section {
+aside {
   padding: 1.25rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
-section .text {
+aside .text {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
-section .text h2 {
+aside .text h2 {
   font-size: 1.75rem;
 }
-section .text p {
+aside .text p {
   color: #333333;
   font-size: 0.825rem;
 }
-section .text button {
+aside .text button {
   width: 12.5rem;
   align-self: flex-start;
 }
 
 @media screen and (min-width: 768px) {
-  section {
+  aside {
     padding: 1.75rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 3rem;
   }
-  section .customizable {
+  aside .customizable {
     width: 65%;
   }
-  section .text h2 {
+  aside .text h2 {
     font-size: 2.3rem;
   }
-  section .text p {
+  aside .text p {
     font-size: 1.05rem;
   }
-  section .text button {
+  aside .text button {
     font-size: 1rem;
   }
-  section .text button:hover span {
+  aside .text button:hover span {
     color: #000;
   }
 }
 @media screen and (min-width: 1024px) {
-  section {
+  aside {
     padding: 2.25rem;
     flex-direction: row-reverse;
   }
-  section .customizable {
+  aside .customizable {
     max-width: 30rem;
   }
-  section .text {
+  aside .text {
     gap: 1rem;
   }
 }
 @media screen and (min-width: 1440px) {
-  section {
+  aside {
     justify-content: center;
     gap: 0;
   }
-  section .text {
+  aside .text {
     width: 45%;
   }
 }
 @media screen and (min-width: 1600px) {
-  section {
+  aside {
     gap: 7.5rem;
   }
-  section .customizable {
+  aside .customizable {
     max-width: 37.5rem;
   }
-  section .text {
+  aside .text {
     width: 40%;
   }
-  section .text h2 {
+  aside .text h2 {
     font-size: 2.4rem;
   }
-  section .text p {
+  aside .text p {
     font-size: 1.1rem;
   }
 }
